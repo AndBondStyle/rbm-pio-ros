@@ -9,7 +9,7 @@ sudo udevadm control --reload-rules && sudo udevadm trigger
 Start & attach to docker container:
 ```
 docker compose up -d
-docker exec ros bash
+docker compose exec ros bash
 ```
 
 Initial setup:
@@ -37,6 +37,11 @@ pio run -t upload
 Build foxglove bridge from source (version 0.8.5):
 ```
 // TODO
+```
+
+Build custom ROS packages
+```
+make build-all
 ```
 
 Start ROS pipeline (multiple terminals / tmux):
